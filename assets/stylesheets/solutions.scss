@@ -2,13 +2,61 @@
   color: green;
 }
 
-.post-controls .accepted-text {
-  display: inline-block;
-  font-size: inherit;
-  vertical-align: middle;
-  line-height: 35px;
-  margin-right: -5px;
-  z-index: 999;
+.post-controls {
+
+  //'This solved my question' button
+  button.unaccepted {
+    padding-top: 0;
+    padding-bottom: 30px;
+    width: 200px;
+    visibility: hidden;
+    position: relative;  
+	}
+	
+  button.unaccepted:after {
+    visibility: visible;
+    position: absolute;
+    margin: 5px;
+    top: 1;
+    left: 0;
+    border-width:0.5px;  
+    border-style:solid;
+    padding: 12px;
+    border-radius: 4px;
+    content: 'This solved my question';
+  }
+  
+  //Green text in front of the button indicating solution
+  .accepted-text  {
+    display: inline-block;
+    font-size: inherit;
+    vertical-align: middle;
+    line-height: 35px;
+    margin-right: -5px;
+    z-index: 999;
+  }
+  
+  //'Unmark this solution' button
+  button.accepted {
+    padding-top: 0;
+    padding-bottom: 30px;
+    width: 200px;
+    visibility: hidden;
+    position: relative;  
+	}
+  
+  button.accepted:after {
+    visibility: visible;
+    position: absolute;
+    margin: 5px;
+    top: 1;
+    left: 0;
+    border-width:0.5px;
+    border-style:solid;
+    padding: 12px;
+    border-radius: 4px;
+    content: 'Unmark this solution';
+	}
 }
 
 // you can style accepted answers however your want

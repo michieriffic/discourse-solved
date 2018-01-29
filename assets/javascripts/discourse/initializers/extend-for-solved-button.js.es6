@@ -81,8 +81,8 @@ function initializeWithApi(api) {
         title: 'solved.accept_answer',
         position
       };
-    } else if (canUnaccept || accepted) {
-      const title = canUnaccept ? 'solved.unaccept_answer' : 'solved.accepted_answer';
+    } else if (canUnaccept) {
+      const title = canUnaccept ? 'solved.unaccept_answer' : '';
       return {
         action: 'unacceptAnswer',
         icon: 'check-square',
@@ -93,7 +93,19 @@ function initializeWithApi(api) {
           return h('span.accepted-text', I18n.t('solved.solution'));
         }
       };
+    } else if (accepted) {
+      const title = accepted ? 'solved.accepted_answer' : '';
+      return {
+        icon: '',
+        title,
+        className: 'accepted fade-out',
+        position,
+        beforeButton(h) {
+          return h('span.accepted-text', I18n.t('solved.solution'));
+        }
+      };
     }
+    
   });
 
   api.decorateWidget('post-contents:after-cooked', dec => {
