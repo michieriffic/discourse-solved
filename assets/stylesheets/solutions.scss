@@ -34,13 +34,16 @@
     line-height: 35px;
     margin-right: -5px;
     z-index: 999;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
   }
   
   //'Unmark this solution' button
   button.accepted {
     padding-top: 0;
     padding-bottom: 30px;
-    width: 200px;
+    width: 180px;
     visibility: hidden;
     position: relative;  
   }
@@ -60,9 +63,8 @@
 
   //Not OP Accepted (not-op-accepted)
   button.not-op-accepted {
-    padding-top: 0;
-    padding-bottom: 30px;
-    width: 200px;
+    padding: 10px;
+    width: 0px;
     visibility: hidden;
     position: relative;  
   }
