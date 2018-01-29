@@ -1,12 +1,12 @@
-# name: discourse-solved
-# about: Add a solved button to answers on Discourse
-# version: 0.1
+# name: michie-discourse-solved
+# about: Add a solved button to answers on Discourse (modified by Michie)
+# version: 0.15
 # authors: Sam Saffron
 # url: https://github.com/discourse/discourse-solved
 
 enabled_site_setting :solved_enabled
 
-PLUGIN_NAME = "discourse_solved".freeze
+PLUGIN_NAME = "michie-discourse_solved".freeze
 
 register_asset 'stylesheets/solutions.scss'
 
