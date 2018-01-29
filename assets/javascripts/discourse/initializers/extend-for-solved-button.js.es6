@@ -98,7 +98,7 @@ function initializeWithApi(api) {
       return {
         icon: '',
         title,
-        className: 'accepted fade-out',
+        className: 'not-op-accepted fade-out',
         position,
         beforeButton(h) {
           return h('span.accepted-text', I18n.t('solved.solution'));
