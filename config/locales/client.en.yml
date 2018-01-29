@@ -11,7 +11,7 @@ en:
       accept_answer: "Select if this reply solves the problem"
       has_accepted_answer: "This topic has a solution"
       has_no_accepted_answer: "This topic has no solution"
-      unaccept_answer: "Unselect if this reply no longer solves the problem"
+      unaccept_answer: "Select if this reply no longer solves the problem"
       accepted_answer: "Solution"
       solution: "Solution"
       solution_summary:
